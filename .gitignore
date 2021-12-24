@@ -1,0 +1,11 @@
+.DS_Store
+node_modules
+.npm
+
+# build
+esm
+lib
+coverage
+
+# Enviroment
+.env
