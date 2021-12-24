@@ -81,6 +81,7 @@ export const erc20Tokens = async (
       }
 
       list.push(noExistItem);
+      continue;
     }
 
     const balance = await erc20Balance(provider, contractAddress, targetAddress);
