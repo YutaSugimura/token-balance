@@ -3,7 +3,7 @@ import type { Provider } from '../src/types';
 import { createProvider } from './provider';
 import { erc20Balance, erc20Decimals, erc20Name, erc20Symbol } from '../src/erc20/methods';
 
-let provider: any = null;
+let provider: Provider | null = null;
 let address = '';
 
 beforeAll(() => {

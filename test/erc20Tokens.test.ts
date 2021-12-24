@@ -3,7 +3,7 @@ import type { Provider } from '../src/types';
 import { createProvider } from './provider';
 import { erc20Tokens } from '../src';
 
-let provider: any = null;
+let provider: Provider | null = null;
 let address = '';
 
 jest.setTimeout(20000);
