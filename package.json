@@ -3,13 +3,32 @@
   "name": "@asset-projects/token-balance",
   "description": "List of tokens on Ethereum and Ethereum-compatible chains",
   "author": "@asset-projects",
+  "bugs": {
+    "url": "https://github.com/asset-project/token-balance/issues"
+  },
+  "homepage": "https://github.com/asset-project/token-balance#readme",
   "keywords": [
     "asset-projects",
     "ethereum",
-    "token"
+    "ERC20",
+    "token",
+    "list",
+    "mainnet",
+    "optimism",
+    "arbitrum",
+    "polygon",
+    "binance",
+    "balance"
   ],
   "license": "MIT",
-  "main": "index.js",
+  "main": "lib/src/index.js",
+  "module": "esm/src/index.js",
+  "types": "lib/src/index.d.ts",
+  "typings": "lib/src/index.d.ts",
+  "files": [
+    "lib/",
+    "esm/"
+  ],
   "scripts": {
     "start": "ts-node test/index.ts",
     "test": "jest",
