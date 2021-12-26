@@ -5,7 +5,7 @@ import { erc20Tokens } from '../src/erc20/tokens';
 dotEnv.config();
 
 export const fn = async () => {
-  const JSON_RPC_URL = process.env.JSON_RPC_URL;
+  const JSON_RPC_URL = process.env.JSON_RPC_URL ?? '';
   const provider = createProvider(JSON_RPC_URL);
 
   const address = process.env.TARGET_ADDRESS ?? '0xAb5801a7D398351b8bE11C439e05C5B3259aeC9B';
