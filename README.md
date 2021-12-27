@@ -1,5 +1,7 @@
 # @asset-projects/token-balance
 
+[![Test](https://github.com/asset-project/token-balance/actions/workflows/node.js.yml/badge.svg)](https://github.com/asset-project/token-balance/actions/workflows/node.js.yml)
+
 A library for retrieving the amount of ERC20 tokens held by a specific address.
 
 ## Install on your project
