@@ -11,6 +11,7 @@ beforeAll(() => {
 
   provider = createProvider(process.env.JSON_RPC_URL) as Provider;
   address = process.env.TARGET_ADDRESS ?? '0xAb5801a7D398351b8bE11C439e05C5B3259aeC9B';
+  console.log(address);
 });
 
 const DAI_TOKEN = {
