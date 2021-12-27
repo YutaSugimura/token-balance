@@ -36,4 +36,4 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile --prefer-offline
       - name: Run test
-        run: INFURA_PROJECT_ID="${{INFURA_PROJECT_ID}}" INFURA_PROJECT_SECRET="${{INFURA_PROJECT_SECRET}}" JSON_RPC_URL="${{JSON_RPC_URL}}" TEST_JSON_RPC_URL="${{TEST_JSON_RPC_URL}}" TARGET_ADDRESS="${{TARGET_ADDRESS}}" yarn test-all
+        run: INFURA_PROJECT_ID="${{secrets.INFURA_PROJECT_ID}}" INFURA_PROJECT_SECRET="${{secrets.INFURA_PROJECT_SECRET}}" JSON_RPC_URL="${{secrets.JSON_RPC_URL}}" TEST_JSON_RPC_URL="${{secrets.TEST_JSON_RPC_URL}}" TARGET_ADDRESS="${{secrets.TARGET_ADDRESS}}" yarn test-all
