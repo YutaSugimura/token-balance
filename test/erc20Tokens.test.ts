@@ -24,7 +24,6 @@ describe('Test erc20Tokens', () => {
     ];
 
     const result = await erc20Tokens(provider, address, initialAcquistionAddressList);
-    console.log(result);
     expect(result).toHaveLength(3);
   });
 });
