@@ -18,6 +18,16 @@ jobs:
         node-version: [14.x]
 
     steps:
+      - shell: bash
+        env:
+          INFURA_PROJECT_ID: ${{ secrets.INFURA_PROJECT_ID }}
+          INFURA_PROJECT_SECRET: ${{ secrets.INFURA_PROJECT_SECRET }}
+          JSON_RPC_URL: ${{ secrets.JSON_RPC_URL }}
+          TEST_JSON_RPC_URL: ${{ secrets.TEST_JSON_RPC_URL }}
+          TARGET_ADDRESS: ${{ secrets.TARGET_ADDRESS }}
+        run: |
+          example-command "$SUPER_SECRET"
+
       - uses: actions/checkout@v2
 
       - name: Use Node.js ${{ matrix.node-version }}
@@ -35,10 +45,4 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile --prefer-offline
       - name: Run test
-        env:
-          INFURA_PROJECT_ID: ${{ secrets.INFURA_PROJECT_ID }}
-          INFURA_PROJECT_SECRET: ${{ secrets.INFURA_PROJECT_SECRET }}
-          JSON_RPC_URL: ${{ secrets.JSON_RPC_URL }}
-          TEST_JSON_RPC_URL: ${{ secrets.TEST_JSON_RPC_URL }}
-          TARGET_ADDRESS: ${{ secrets.TARGET_ADDRESS }}
         run: yarn test-all
