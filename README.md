@@ -17,7 +17,7 @@ A library for retrieving the amount of ERC20 tokens held by a specific address.
 
 # How to Use
 
-1. Install ethers
+1. Installing dependencies
 
 ```zsh
   # npm
