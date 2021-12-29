@@ -41,8 +41,7 @@
     "build": "yarn build:cjs && yarn build:es"
   },
   "dependencies": {
-    "@asset-projects/token-list": "^2.0.6",
-    "ethers": "^5.5.2"
+    "@asset-projects/token-list": "^2.0.6"
   },
   "devDependencies": {
     "@babel/core": "^7.16.5",
@@ -56,6 +55,7 @@
     "dotenv": "^10.0.0",
     "eslint": "^8.5.0",
     "eslint-config-prettier": "^8.3.0",
+    "ethers": "^5.5.2",
     "jest": "^27.4.5",
     "prettier": "^2.5.1",
     "ts-node": "^10.4.0",
