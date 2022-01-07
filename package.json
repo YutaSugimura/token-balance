@@ -1,5 +1,5 @@
 {
-  "version": "0.1.2",
+  "version": "0.2.0",
   "name": "@asset-projects/token-balance",
   "description": "A library for retrieving the amount of ERC20 tokens held by a specific address.",
   "author": "@asset-projects",
@@ -18,7 +18,10 @@
     "arbitrum",
     "polygon",
     "binance",
-    "balance"
+    "balance",
+    "ERC20",
+    "ERC721",
+    "NFT"
   ],
   "license": "MIT",
   "main": "lib/src/index.js",
@@ -42,7 +45,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@asset-projects/token-list": "^2.0.6"
+    "@asset-projects/token-list": "^3.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.16.5",

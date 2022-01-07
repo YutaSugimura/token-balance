@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@asset-projects/token-list@^2.0.6":
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/@asset-projects/token-list/-/token-list-2.0.6.tgz#60c5581a503354f3b1f7b53793bc0c06b6ffc42a"
-  integrity sha512-UArr4kUkqg3SgfOUDK49gQenaxXdN8dXW95tljSZvhIeE862A8CPAIZmhXXKARCoKJNdrGL2fe07oEOTp8zDfg==
+"@asset-projects/token-list@^3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@asset-projects/token-list/-/token-list-3.0.0.tgz#344367935834e7eff52b97eb74cdb7010f0bba63"
+  integrity sha512-JMpGjUujoIem0E6eVbeqwF09U1kCz2PxhgX2qhkMT6W+3BN4G0WEdUdQa4zcWMCbLOaW7oG8WhBEv29eYXuafg==
 
 "@babel/code-frame@^7.12.13", "@babel/code-frame@^7.16.0":
   version "7.16.0"
