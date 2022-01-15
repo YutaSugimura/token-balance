@@ -7,24 +7,14 @@ A library for retrieving the amount of ERC20 tokens held by a specific address.
 
 ## Install on your project
 
+1. Installing
+
 ```zsh
   # npm
   npm i @asset-projects/token-balance
 
   # yarn
   yarn add @asset-projects/token-balance
-```
-
-# How to Use
-
-1. Installing dependencies
-
-```zsh
-  # npm
-  npm i ethers
-
-  # yarn
-  yarn add ethers
 ```
 
 2. Implementation
