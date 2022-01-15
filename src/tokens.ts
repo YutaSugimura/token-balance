@@ -1,8 +1,8 @@
 import { tokenList } from '@asset-projects/token-list';
-import type { ERC20Possession, ERC20PossessionList, Provider } from '../types';
+import { contracts } from '@asset-projects/ethers-wrapper';
+import type { ERC20Possession, ERC20PossessionList, Provider } from './types';
 import { initialAcquistionList } from './initialAcquisitionList';
-import { CHAIN_ID_LIST } from '../networks';
-import { erc20Balance, erc20Decimals, erc20Name, erc20Symbol } from './methods';
+import { CHAIN_ID_LIST } from './networks';
 
 export const notExist = async (
   provider: Provider,
@@ -10,7 +10,7 @@ export const notExist = async (
   contractAddress: string,
   targetAddress: string,
 ) => {
-  const balance = await erc20Balance(provider, contractAddress, targetAddress);
+  const balance = await contracts.ERC20.balance(provider, contractAddress, targetAddress);
 
   if (!balance || Number(balance) === 0) {
     return;
@@ -29,15 +29,15 @@ export const notExist = async (
 
   await Promise.all([
     (async () => {
-      const name = await erc20Name(provider, contractAddress);
+      const name = await contracts.ERC20.name(provider, contractAddress);
       if (name) newItem.name = name;
     })(),
     (async () => {
-      const symbol = await erc20Symbol(provider, contractAddress);
+      const symbol = await contracts.ERC20.symbol(provider, contractAddress);
       if (symbol) newItem.symbol = symbol;
     })(),
     (async () => {
-      const decimals = await erc20Decimals(provider, contractAddress);
+      const decimals = await contracts.ERC20.decimals(provider, contractAddress);
       if (decimals) newItem.decimals = decimals;
     })(),
   ]);
@@ -84,7 +84,7 @@ export const erc20Tokens = async (
       continue;
     }
 
-    const balance = await erc20Balance(provider, contractAddress, targetAddress);
+    const balance = await contracts.ERC20.balance(provider, contractAddress, targetAddress);
 
     if (balance && Number(balance) > 0) {
       list.push({

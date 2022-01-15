@@ -1,2 +1,2 @@
-export { erc20Tokens } from './erc20';
+export { erc20Tokens } from './tokens';
 export type { ERC20PossessionList } from './types';

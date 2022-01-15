@@ -1,6 +1,6 @@
 import dotEnv from 'dotenv';
 import { createProvider } from './provider';
-import { erc20Tokens } from '../src/erc20/tokens';
+import { erc20Tokens } from '../src';
 
 dotEnv.config();
 
