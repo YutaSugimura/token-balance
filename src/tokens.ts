@@ -1,6 +1,6 @@
 import { tokenList } from '@asset-projects/token-list';
-import { contracts } from '@asset-projects/ethers-wrapper';
-import type { ERC20Possession, ERC20PossessionList, Provider } from './types';
+import { contracts, type Provider } from '@asset-projects/ethers-wrapper';
+import type { ERC20Possession, ERC20PossessionList } from './types';
 import { initialAcquistionList } from './initialAcquisitionList';
 import { CHAIN_ID_LIST } from './networks';
 

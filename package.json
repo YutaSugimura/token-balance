@@ -45,7 +45,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "@asset-projects/ethers-wrapper": "^1.0.0-beta.3",
+    "@asset-projects/ethers-wrapper": "^1.0.0-beta.4",
     "@asset-projects/token-list": "^3.0.1"
   },
   "devDependencies": {

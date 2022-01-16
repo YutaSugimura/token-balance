@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@asset-projects/ethers-wrapper@^1.0.0-beta.3":
-  version "1.0.0-beta.3"
-  resolved "https://registry.yarnpkg.com/@asset-projects/ethers-wrapper/-/ethers-wrapper-1.0.0-beta.3.tgz#f2e9afb3191ea95fab3311a646ffd8b0bd965aed"
-  integrity sha512-ArsuhIKzeG1BTzD2zf2Hifj4iyCbnfnRVHH+mWkMT8xd7RPTJnZe/I+0XSMlsjBgofWA5xoMo+BqQWVg6Pyeqg==
+"@asset-projects/ethers-wrapper@^1.0.0-beta.4":
+  version "1.0.0-beta.4"
+  resolved "https://registry.yarnpkg.com/@asset-projects/ethers-wrapper/-/ethers-wrapper-1.0.0-beta.4.tgz#0c96c63114465dfe7eb848ea6b35ebd9622655bc"
+  integrity sha512-gWLUOrZgSJT+oGHBNZML2iaiQBE/numDYn4cCHk7mMAQV/kew18j2FpVHqXoqBSRjSmEWyn06WvyRFLwFI4hcg==
   dependencies:
     ethers "^5.5.3"
 

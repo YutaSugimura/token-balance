@@ -1,6 +1,5 @@
 import dotEnv from 'dotenv';
-import type { Provider } from '../src/types';
-import { createProvider } from './provider';
+import { getProvider, type Provider } from '@asset-projects/ethers-wrapper';
 import { erc20Tokens } from '../src';
 
 let provider: Provider | null = null;
@@ -11,7 +10,7 @@ jest.setTimeout(20000);
 beforeAll(() => {
   dotEnv.config();
 
-  provider = createProvider(process.env.JSON_RPC_URL) as Provider;
+  provider = getProvider(process.env.JSON_RPC_URL) as Provider;
   address = '0xAb5801a7D398351b8bE11C439e05C5B3259aeC9B';
 });
 
