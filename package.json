@@ -1,5 +1,5 @@
 {
-  "version": "0.3.2",
+  "version": "0.3.3",
   "name": "@asset-projects/token-balance",
   "description": "A library for retrieving the amount of ERC20 tokens held by a specific address.",
   "author": "@asset-projects",
@@ -46,7 +46,7 @@
   },
   "dependencies": {
     "@asset-projects/ethers-wrapper": "^1.0.0-beta.4",
-    "@asset-projects/token-list": "^3.0.1"
+    "@asset-projects/token-list": "^3.0.3"
   },
   "devDependencies": {
     "@babel/core": "^7.16.5",

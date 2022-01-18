@@ -9,10 +9,10 @@
   dependencies:
     ethers "^5.5.3"
 
-"@asset-projects/token-list@^3.0.1":
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/@asset-projects/token-list/-/token-list-3.0.1.tgz#ac7de43f52ea32aabed8867a9100923f0a0b93d6"
-  integrity sha512-mLswtge2PsNByr9kbHNt+XVg0Ztc652aqJbafnRLA+LOr27j+RnaK/XaKZd2nIdgQYsasfg0JRLTQxqoUqJkiQ==
+"@asset-projects/token-list@^3.0.3":
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@asset-projects/token-list/-/token-list-3.0.3.tgz#0952a754a88572c417b9438f45e698a6a27e3f0a"
+  integrity sha512-aUeaOoVXykN8Lpz6F+amuv/hhG0H9MpFoBq4KJnDF/YKn3DYOn96bB7hqojkukfREkHm5zslKLFAXvKmUq/kIw==
 
 "@babel/code-frame@^7.12.13", "@babel/code-frame@^7.16.0":
   version "7.16.0"
