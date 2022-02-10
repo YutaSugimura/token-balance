@@ -1,5 +1,5 @@
 {
-  "version": "0.3.4",
+  "version": "0.3.5",
   "name": "@asset-projects/token-balance",
   "description": "A library for retrieving the amount of ERC20 tokens held by a specific address.",
   "author": "@asset-projects",
