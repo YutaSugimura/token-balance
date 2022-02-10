@@ -4,9 +4,9 @@
   "description": "A library for retrieving the amount of ERC20 tokens held by a specific address.",
   "author": "@asset-projects",
   "bugs": {
-    "url": "https://github.com/asset-project/token-balance/issues"
+    "url": "https://github.com/asset-projects/token-balance/issues"
   },
-  "homepage": "https://github.com/asset-project/token-balance#readme",
+  "homepage": "https://github.com/asset-projects/token-balance#readme",
   "keywords": [
     "asset-projects",
     "ethereum",
